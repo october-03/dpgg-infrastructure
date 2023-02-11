@@ -13,3 +13,7 @@ provider "aws" {
   region = "ap-northeast-2"
   profile = "terraform"
 }
+
+module "vpc" {
+  source = "./vpc"
+}
